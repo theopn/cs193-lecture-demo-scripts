@@ -40,25 +40,33 @@ create_cpp_file() {
 }
 
 main() {
+  echo "========== Init lecture 2 folder=========="
   make_folder ~/cs193-lecture-demo/lecture2 ~/cs193-lecture-demo-backup/
 
+  echo "==========Deploying java files=========="
   mkdir -p ~/cs193-lecture-demo/lecture2/java/
   java_files=("HelloWorld" "ByeWorld" "ProjectVersionOne" "ProjectVersionTwo" "ProjectVersionFinal" "ProjectVersionFinalFinal" "ProjectVersionFinalFinalFinalActuallyFinal")
   for file_name in ${java_files[@]}; do
     create_java_file "$file_name" ~/cs193-lecture-demo/lecture2/java/
+    echo ""$file_name".java created"
   done
 
+  echo "==========Deploying C files=========="
   mkdir -p ~/cs193-lecture-demo/lecture2/c/
   c_files=("doubly_linked_list" "signly_linked_list" "array_list" "malloc")
   for file_name in ${c_files[@]}; do
     create_c_file "$file_name" ~/cs193-lecture-demo/lecture2/c/
+    echo ""$file_name".c created"
   done
 
+  echo "==========Deploying cpp files=========="
   mkdir -p ~/cs193-lecture-demo/lecture2/cpp/
   cpp_files=("HelloWorld" "ByeWorld" "WhatUpWorld")
   for file_name in ${cpp_files[@]}; do
     create_cpp_file "$file_name" ~/cs193-lecture-demo/lecture2/cpp/
+    echo ""$file_name".cpp created"
   done
 }
 
 main
+echo "==========EOF=========="
