@@ -42,6 +42,7 @@ create_cpp_file() {
 main() {
   echo "========== Init lecture 2 folder=========="
   make_folder ~/cs193-lecture-demo/lecture2 ~/cs193-lecture-demo-backup/
+  touch ~/cs193-lecture-demo/lecture2/.hidden_file
 
   echo "==========Deploying java files=========="
   mkdir -p ~/cs193-lecture-demo/lecture2/java/

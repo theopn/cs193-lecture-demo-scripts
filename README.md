@@ -7,8 +7,14 @@ You can find resources I used for demos in lectures while working as an instruct
 ## Lecture 2 - Essential Shell Commands
 
 1. Run `lecture2.sh` to initialize `~/cs193-demos/lecture2/` folder
-2. `ls` with flag (combined `-la`, etc.) and `clear`
+2. `ls && ls-al`, `clear`
 3. `cd c` (show the tab completion) and `pwd`
 4. `cd ..`, `touch helloWorld.java`, `mv hello_world.java java/`
-5. `mv ProjectVersionFinalFinalFinalActuallyFinal.java FinalProjectSubmission.java`
+5. `cat ProjectVersionFinalFinalFinalActuallyFinal.java`
+6. `mv ProjectVersionFinalFinalFinalActuallyFinal.java FinalProjectSubmission.java`
+7. `cat FinalProjectSubmission.java`
+8. `rm ProjectVersionOne.java`
+9. `cd.. && rm -rf cpp`
+10. Show `man vim`, locate `--clean` option
+11. `vim --clean` and demo Vim
 
