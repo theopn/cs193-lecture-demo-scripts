@@ -9,10 +9,10 @@ You can find resources I used for demos in lectures while working as an instruct
 1. Run `lecture2.sh` to initialize `~/cs193-demos/lecture2/` folder
 2. `ls && ls-al`, `clear`
 3. `cd c` (show the tab completion) and `pwd`
-4. `cd ..`, `touch helloWorld.java`, `mv hello_world.java java/`
+4. `cd ..`, `touch NewFile.java`, `mv NewFile.java java/`
 5. `cat ProjectVersionFinalFinalFinalActuallyFinal.java`
-6. `mv ProjectVersionFinalFinalFinalActuallyFinal.java FinalProjectSubmission.java`
-7. `cat FinalProjectSubmission.java`
+6. `mv ProjectVersionFinalFinalFinalActuallyFinal.java Pj.java`
+7. `cat Pj.java`
 8. `rm ProjectVersionOne.java`
 9. `cd.. && rm -rf cpp`
 10. Show `man vim`, locate `--clean` option
