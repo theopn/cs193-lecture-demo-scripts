@@ -18,3 +18,15 @@ You can find resources I used for demos in lectures while working as an instruct
 10. Show `man vim`, locate `--clean` option
 11. `vim --clean` and demo Vim
 
+## Lecture 4 - SFTP/SCP
+
+0. Run `lecture4.sh clean` to delete the demo folder
+1. Run `lecture4.sh local` or `lecture4.sh remote` to initialize `local` and `remote` folders within `~/cs193-lecture-demo/lecture4/`
+2. Using `tmux` or two separate terminal windows, navigate to `local` and `remote` folder respectively
+3. Demonstrate SFTP navigation commands (`lcd`, `lls`, `lpwd`)
+4. Modify `code.c` in the `remote`
+5. `SFTP> get code.c`. `cat` the downloaded content
+6. `SFTP> put -r folder_to_upload`
+7. `scp -r <login>@remote.edu:./folder_to_download/ ./`
+
+
