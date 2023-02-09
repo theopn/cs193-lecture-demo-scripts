@@ -29,4 +29,12 @@ You can find resources I used for demos in lectures while working as an instruct
 6. `SFTP> put -r folder_to_upload`
 7. `scp -r <login>@remote.edu:./folder_to_download/ ./`
 
+## Lecture 5 - Debugging
+
+0. Open `VowelCount.java` in IntelliJ IDEA
+1. Show `java: bad operand types for binary operator '=='` error and error highlighting
+2. Set a breakpoint before the `countVowels` call, start the debugger
+3. Show "step over" (line by line in the current method)
+4. Show "step into" (stepping into a method)
+5. Fix the issue by changing the string to all lowercase using `input = input.toLowerCase()`
 
