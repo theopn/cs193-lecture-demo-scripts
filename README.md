@@ -38,3 +38,16 @@ You can find resources I used for demos in lectures while working as an instruct
 4. Show "step into" (stepping into a method)
 5. Fix the issue by changing the string to all lowercase using `input = input.toLowerCase()`
 
+## Lecture 6 - Intro to VCS and single-user ADD-COMMIT-PUSH workflow
+
+1. Make a new GitHub repository. Show the message for `git init` command (just mention it) and clone the repository
+2. Show that the cloned repository is a regular directory with `.git` folder using `ls -la` command
+3. Create a new file called `hello.py`. Make a new line
+4. Show `git status` command
+5. `git add . && git commit`
+6. Show that the change is not available on the remote repository
+7. Add a new line to the file, `git add . && git commit -m "(message)"`
+8. `git push` and show that the commits have been reflected on the remote repository
+9. `git log && git revert <commit-id>`
+10. `git push`
+
