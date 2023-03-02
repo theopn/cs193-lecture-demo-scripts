@@ -20,23 +20,23 @@ You can find resources I used for demos in lectures while working as an instruct
 
 ## Lecture 4 - SFTP/SCP
 
-0. Run `lecture4.sh clean` to delete the demo folder
-1. Run `lecture4.sh local` or `lecture4.sh remote` to initialize `local` and `remote` folders within `~/cs193-lecture-demo/lecture4/`
-2. Using `tmux` or two separate terminal windows, navigate to `local` and `remote` folder respectively
-3. Demonstrate SFTP navigation commands (`lcd`, `lls`, `lpwd`)
-4. Modify `code.c` in the `remote`
-5. `SFTP> get code.c`. `cat` the downloaded content
-6. `SFTP> put -r folder_to_upload`
-7. `scp -r <login>@remote.edu:./folder_to_download/ ./`
+1. Run `lecture4.sh clean` to delete the demo folder
+2. Run `lecture4.sh local` or `lecture4.sh remote` to initialize `local` and `remote` folders within `~/cs193-lecture-demo/lecture4/`
+3. Using `tmux` or two separate terminal windows, navigate to `local` and `remote` folder respectively
+4. Demonstrate SFTP navigation commands (`lcd`, `lls`, `lpwd`)
+5. Modify `code.c` in the `remote`
+6. `SFTP> get code.c`. `cat` the downloaded content
+7. `SFTP> put -r folder_to_upload`
+8. `scp -r <login>@remote.edu:./folder_to_download/ ./`
 
 ## Lecture 5 - Debugging
 
-0. Open `VowelCount.java` in IntelliJ IDEA
-1. Show `java: bad operand types for binary operator '=='` error and error highlighting
-2. Set a breakpoint before the `countVowels` call, start the debugger
-3. Show "step over" (line by line in the current method)
-4. Show "step into" (stepping into a method)
-5. Fix the issue by changing the string to all lowercase using `input = input.toLowerCase()`
+1. Open `VowelCount.java` in IntelliJ IDEA
+2. Show `java: bad operand types for binary operator '=='` error and error highlighting
+3. Set a breakpoint before the `countVowels` call, start the debugger
+4. Show "step over" (line by line in the current method)
+5. Show "step into" (stepping into a method)
+6. Fix the issue by changing the string to all lowercase using `input = input.toLowerCase()`
 
 ## Lecture 6 - Intro to VCS and single-user ADD-COMMIT-PUSH workflow
 
@@ -50,4 +50,24 @@ You can find resources I used for demos in lectures while working as an instruct
 8. `git push` and show that the commits have been reflected on the remote repository
 9. `git log && git revert <commit-id>`
 10. `git push`
+
+## Lecture 8 - Merge Conflict
+
+1. Create a new repository
+2. Create a new file called `hello.c` and add the following content:
+
+```c
+#include <stdio.h>
+
+int main() {
+  printf("Hello CS193 students!");
+  return 0;
+}
+```
+
+3. Change the line 4 (print statement) to something like "Nice to meet you..."
+4. Make a commit in the local repository. It's a good time to review "add - commit" workflow. **Do NOT push**
+5. In GitHub web interface, change the line 4 to something else (e.g. "I'm an evil coworker")
+6. `git status` -> `git pull`
+7. Show merge conflict, fix it, commit, and push
 
